@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Big Bird Outfit - Jeans Pants</title>
+  <title>Big Bird Outfit - Denim Jeans</title>
   <style>
     * {
       margin: 0;
@@ -13,12 +13,12 @@
 
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f2f2f2;
+      background-color: #f0f0f0;
       color: #333;
     }
 
     header {
-      background-color: #111;
+      background-color: #1a1a1a;
       color: white;
       padding: 1rem 2rem;
       display: flex;
@@ -28,48 +28,48 @@
     }
 
     header h1 {
-      font-size: 1.8rem;
-      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 1px;
     }
 
     nav a {
       color: white;
-      text-decoration: none;
       margin-left: 1rem;
+      text-decoration: none;
       font-size: 1rem;
     }
 
     .hero {
-      background: url('https://images.unsplash.com/photo-1585386959984-a41552256a97?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      height: 70vh;
+      background: url('https://images.unsplash.com/photo-1602810316573-e198de7cc15e?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 65vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: center;
       color: white;
+      text-align: center;
     }
 
     .hero h2 {
-      font-size: 3rem;
       background-color: rgba(0,0,0,0.6);
       padding: 1rem 2rem;
       border-radius: 10px;
+      font-size: 2.8rem;
     }
 
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
       padding: 2rem;
     }
 
     .product {
-      background-color: white;
-      padding: 1rem;
+      background-color: #fff;
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
       text-align: center;
-      transition: transform 0.2s ease;
     }
 
     .product:hover {
@@ -78,36 +78,36 @@
 
     .product img {
       width: 100%;
-      height: 250px;
+      height: 300px;
       object-fit: cover;
-      border-radius: 8px;
     }
 
     .product h3 {
-      margin: 1rem 0 0.5rem;
       font-size: 1.2rem;
+      margin: 1rem 0 0.5rem;
     }
 
     .product button {
-      padding: 0.5rem 1rem;
-      background-color: #111;
+      margin: 1rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #1a1a1a;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background 0.3s;
     }
 
     .product button:hover {
-      background-color: #444;
+      background-color: #333;
     }
 
     footer {
-      background-color: #111;
+      background-color: #1a1a1a;
       color: white;
       text-align: center;
       padding: 1rem;
-      margin-top: 2rem;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 600px) {
@@ -120,13 +120,19 @@
         align-items: flex-start;
       }
 
+      nav {
+        margin-top: 0.5rem;
+      }
+
       nav a {
-        margin: 0.5rem 0 0 0;
+        display: block;
+        margin: 0.5rem 0;
       }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Big Bird Outfit</h1>
     <nav>
@@ -137,29 +143,32 @@
   </header>
 
   <section class="hero">
-    <h2>Discover Premium Denim Pants</h2>
+    <h2>Explore Premium Denim Pants</h2>
   </section>
 
   <section class="products">
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1618354691320-d52c6d3741c8?auto=format&fit=crop&w=800&q=80" alt="Slim Fit Jeans">
-      <h3>Slim Fit Blue Jeans</h3>
-      <button onclick="addToCart('Slim Fit Blue Jeans')">Add to Cart</button>
+      <img src="https://images.unsplash.com/photo-1600180758890-1a1a7dc60866?auto=format&fit=crop&w=800&q=80" alt="Blue Slim Jeans">
+      <h3>Blue Slim Jeans</h3>
+      <button onclick="addToCart('Blue Slim Jeans')">Add to Cart</button>
     </div>
+
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1584367361320-669297a86edb?auto=format&fit=crop&w=800&q=80" alt="Classic Denim">
-      <h3>Classic Denim Pants</h3>
-      <button onclick="addToCart('Classic Denim Pants')">Add to Cart</button>
+      <img src="https://images.unsplash.com/photo-1602810316037-11d7b93059bb?auto=format&fit=crop&w=800&q=80" alt="Dark Washed Denim">
+      <h3>Dark Washed Denim</h3>
+      <button onclick="addToCart('Dark Washed Denim')">Add to Cart</button>
     </div>
+
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1593032465171-f5d6e0ba37b5?auto=format&fit=crop&w=800&q=80" alt="Washed Jeans">
-      <h3>Washed Indigo Jeans</h3>
-      <button onclick="addToCart('Washed Indigo Jeans')">Add to Cart</button>
+      <img src="https://images.unsplash.com/photo-1578791416034-4c94b1d4eac6?auto=format&fit=crop&w=800&q=80" alt="Rugged Fit Jeans">
+      <h3>Rugged Fit Jeans</h3>
+      <button onclick="addToCart('Rugged Fit Jeans')">Add to Cart</button>
     </div>
+
     <div class="product">
-      <img src="https://images.unsplash.com/photo-1627640632746-41ec4381f6ae?auto=format&fit=crop&w=800&q=80" alt="Dark Wash Jeans">
-      <h3>Dark Wash Fit</h3>
-      <button onclick="addToCart('Dark Wash Fit')">Add to Cart</button>
+      <img src="https://images.unsplash.com/photo-1587614382346-ac0b07294b28?auto=format&fit=crop&w=800&q=80" alt="Tapered Cut Denim">
+      <h3>Tapered Cut Denim</h3>
+      <button onclick="addToCart('Tapered Cut Denim')">Add to Cart</button>
     </div>
   </section>
 
@@ -172,5 +181,6 @@
       alert(item + " has been added to your cart!");
     }
   </script>
+
 </body>
 </html>
